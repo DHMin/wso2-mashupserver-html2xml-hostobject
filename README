@@ -25,4 +25,4 @@ It will print out "Hello World!".
  * Note:
  - The most outer HTML tag is represented by the variable itself. Ex: xml.html.body (X), xml.body (O).
  - Subtract 1 for the index of XPath element array. Ex: XPath for "Test" /html/body/b[2], 
- but with Html2Xml, xml.body.body[1].toString().
+ but with Html2Xml, xml.body.b[1].toString().
