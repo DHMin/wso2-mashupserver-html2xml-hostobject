@@ -19,9 +19,7 @@ system.log(something);
 It will print out "Hello World!".
 
  * Build:
- - Don't use m2eclipse to build. It won't build due to broken dependencies.
-(WSO2 has several serious problems with their POMs)
- - Just use command line Maven which will generate the output even with the POM errors.
+ - Use Maven to build. (Got rid of Carbon Utils dependency)
 
  * Note:
  - The most outer HTML tag is represented by the variable itself. Ex: xml.html.body (X), xml.body (O).
