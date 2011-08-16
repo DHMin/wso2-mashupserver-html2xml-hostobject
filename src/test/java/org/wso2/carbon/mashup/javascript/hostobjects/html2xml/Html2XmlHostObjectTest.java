@@ -1,8 +1,6 @@
 /*
  * @(#)HtmlCleanerHostObjectTest.java $version 2011. 8. 12.
  *
- * Copyright 2007 NHN Corp. All rights Reserved. 
- * NHN PROPRIETARY/CONFIDENTIAL. Use is subject to license terms.
  */
 
 package org.wso2.carbon.mashup.javascript.hostobjects.html2xml;
