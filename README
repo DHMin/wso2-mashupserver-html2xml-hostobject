@@ -1,0 +1,29 @@
+Html2Xml Host Object for WSO2 Mashup Server
+
+Author: Frederick Haebin Na (haebin.na AT gmail.com)
+Date: 2011-08-16
+License: http://www.apache.org/licenses/LICENSE-2.0
+============================================================
+
+ You don't have to hassle with WebHarvest XML syntax anymore.
+ Just drop the output jar of this project in WSO2_MS_HOME/repository/components/dropins,
+restart your mashup server, and you are ready to go.
+
+ * Usage:
+ 
+var html2xml = new Html2Xml(); 
+var xml = html2xml.transform("<html><body><b>Hello World!</b><b>Test</b></body></html>"); 
+var something = xml.body.b[0].toString(); // EcmaScript 4 XML 
+system.log(something); 
+------------------------------------------------------------
+It will print out "Hello World!".
+
+ * Build:
+ - Don't use m2eclipse to build. It won't build due to broken dependencies.
+(WSO2 has several serious problems with their POMs)
+ - Just use command line Maven which will generate the output even with the POM errors.
+
+ * Note:
+ - The most outer HTML tag is represented by the variable itself. Ex: xml.html.body (X), xml.body (O).
+ - Subtract 1 for the index of XPath element array. Ex: XPath for "Test" /html/body/b[2], 
+ but with Html2Xml, xml.body.body[1].toString().
