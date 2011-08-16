@@ -19,7 +19,8 @@ system.log(something);
 It will print out "Hello World!".
 
  * Build:
- - Use Maven to build. (Got rid of Carbon Utils dependency)
+ - Use Maven to build.
+(Got rid of Carbon Utils dependency, since it was the axis of the evil causing all the build breaks.)
 
  * Note:
  - The most outer HTML tag is represented by the variable itself. Ex: xml.html.body (X), xml.body (O).
